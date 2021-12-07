@@ -51,7 +51,7 @@ public class HomeController {
 	@RequestMapping("/reset")
 	public String reset(HttpSession session) {
 
-			session.setAttribute("count", 0);
+			session.invalidate();
 //			session.removeAttribute("count");
 
 		
